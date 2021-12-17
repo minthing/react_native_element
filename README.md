@@ -12,3 +12,10 @@ npm install --global expo-cli
 brew update
 brew install watchman
 ```
+
+##### make new app
+```
+expo init weather
+cd weather
+npm start
+```
