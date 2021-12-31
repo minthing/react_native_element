@@ -19,3 +19,7 @@ expo init weather
 cd weather
 npm start
 ```
+
+### rules of react native
+* 리엑트 네이티브에서는 `<div>`를 대신해 `View`를 사용함
+* Text는 Text에... 재는 재로 돌아가라...
