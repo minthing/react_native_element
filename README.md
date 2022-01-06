@@ -32,3 +32,6 @@ npm start
 * https://docs.expo.dev/versions/latest/
 * https://reactnative.dev/docs
 * https://reactnative.directory/
+
+### flex box
+* default direction > col
