@@ -35,3 +35,20 @@ npm start
 
 ### flex box
 * default direction > col
+
+### scroll view
+* 기본적으로 scrollview는 제공되지 않음 따로 import해야함
+* scrollView를 사용할 시 기존 style은 먹히지 않음 -> ContentContainerStyle 로 변경해야 함
+* 스크린보다 큰 scroll을 하고싶다면 flex를 사용하지 말아야 함
+
+### dimensions
+* 화면의 길이를 가져올 수 있음
+
+### pagingenables
+* 스크롤을 자유롭게 못하게 함
+
+### showsHorizontalScrollIndicator
+* 아래에 생기는 스크롤 표시를 삭제해줌
+
+### indicator style
+* ios만 됨... 이런 props가 여러개 있으니 doc 주의하여 사용
