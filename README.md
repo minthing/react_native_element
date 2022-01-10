@@ -52,3 +52,24 @@ npm start
 
 ### indicator style
 * ios만 됨... 이런 props가 여러개 있으니 doc 주의하여 사용
+
+### location
+해당 기능을 사용하기 위해선 `expo install expo-location`을 사용해야 함
+아래 코드는 위치 추적 허가를 받아왔는지 확인하는 코드...
+
+* 의도치 않은 이슈 : useState 자동완성이 2개 있는데 react용 useState를 써야 에러가 안남. 코드 컬러링 반응도 다름.
+
+```javascript
+import * as Location from 'expo-location';
+
+export default function App() {
+  const [location, setLocation] = useState();
+  const [ok, setOk] = useState(true);
+  const ask = async() =>{
+    const permission = await Location.requestForegroundPermissionsAsync();
+    console.log(permission)
+  }
+  useEffect(()=> {
+    ask();
+  }, [])
+```
