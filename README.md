@@ -73,3 +73,16 @@ export default function App() {
     ask();
   }, [])
 ```
+
+* location 가져오기
+
+* `latitude`, `longitude` : 위도와 경도
+* `accuracy`는 정확도로 1~6 사이의 값을 가진다
+
+```javascript
+const {coords:{latitude, longitude}} = await Location.getCurrentPositionAsync({accuracy:5});
+
+// 위도와 경도를 통해 현재 위치명을 역으로 가지고 옴
+
+const location = await Location.reverseGeocodeAsync({latitude, longitude}, {useGoogleMaps:false});
+```
