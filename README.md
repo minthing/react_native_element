@@ -86,3 +86,14 @@ const {coords:{latitude, longitude}} = await Location.getCurrentPositionAsync({a
 
 const location = await Location.reverseGeocodeAsync({latitude, longitude}, {useGoogleMaps:false});
 ```
+
+##### api에서 날씨 정보 가져오기
+사용한 api : https://openweathermap.org/api/one-call-api
+다음과 같은 형태로 정보를 가지고 옴
+```javascript
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}`)
+    const json = await response.json()
+```
+
+* 이슈
+리스트 만들 때는 이렇게 해야함...`const [days, setDays] = useState([]);`
