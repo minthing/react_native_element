@@ -97,3 +97,8 @@ const location = await Location.reverseGeocodeAsync({latitude, longitude}, {useG
 
 * 이슈
 리스트 만들 때는 이렇게 해야함...`const [days, setDays] = useState([]);`
+
+### 정리
+
+reverseGeocodeAsync : 위도와 경도를 주소로 변환해줌.
+GeocodeAsync: 주소를 위도, 경도 숫자로 변환해줌.
