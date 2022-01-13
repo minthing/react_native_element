@@ -102,3 +102,8 @@ const location = await Location.reverseGeocodeAsync({latitude, longitude}, {useG
 
 reverseGeocodeAsync : 위도와 경도를 주소로 변환해줌.
 GeocodeAsync: 주소를 위도, 경도 숫자로 변환해줌.
+
+### icon
+expo를 설치하면 `expo/vector-icon`이 자동으로 설치된다.
+https://docs.expo.dev/guides/icons/
+icon doc : https://icons.expo.fyi/
